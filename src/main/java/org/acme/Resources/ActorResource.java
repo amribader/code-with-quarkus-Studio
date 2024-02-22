@@ -43,10 +43,16 @@ public class ActorResource {
         return Response.created(URI.create("/actors/" + actor.getId())).build();
     }
 
+//    @GET
+//    @Path("/search")
+//    public List<ActorEntity> searchByName(@QueryParam("name") String name) {
+//        return actorRepository.searchByName(name);
+//    }
+
     @GET
-    @Path("/search/{name}")
-    public ActorEntity search(String name) {
-        return actorr
+    @Path("/search/")
+    public List<ActorEntity> searchByName(@QueryParam("name") String name) {
+        return personRepository.searchByName(name);
     }
 
 //    @PUT
