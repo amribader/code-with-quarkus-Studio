@@ -10,5 +10,6 @@ public class FilmRepository implements PanacheRepository<FilmEntity> {
     public long countFilms() {
         return count();
     }
+
 }
 
