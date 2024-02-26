@@ -2,6 +2,7 @@ package org.acme.Entity.dvdRental;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "film")
 @Getter
+@Setter
 public class FilmEntity extends PanacheEntityBase {
 
     @Id
